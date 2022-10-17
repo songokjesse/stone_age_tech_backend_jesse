@@ -12,7 +12,7 @@ import java.io.IOException;
 public class FirebaseInitialization {
     public void initialization() throws IOException {
 
-        FileInputStream serviceAccount =  new FileInputStream("./stone-age-technologies-test-firebase-adminsdk-iq6rr-b98ba340b9.json");
+        FileInputStream serviceAccount =  new FileInputStream("./stone-age-technologies-keys.json");
 
         FirebaseOptions options = new FirebaseOptions.Builder()
                 .setCredentials(GoogleCredentials.fromStream(serviceAccount))
